@@ -1,0 +1,194 @@
+@import "../variables.scss";
+
+.main-container {
+  width: 98vw;
+  height: 100vh;
+  // border: 1px solid black;
+  display: flex;
+  // padding: 20px;
+  align-items: center;
+  position: relative;
+  ///////////////////IMAGE CONTAINER////////////////////////
+  &__image-container {
+    position: absolute;
+    margin-left: 350px;
+    width: 900px;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  //////////////////// FORM CONTAINER ///////////////////////
+  &__form-container {
+    position: absolute;
+    width: 550px;
+    height: 80%;
+    background-color: $gris;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 99;
+    margin-left: 100px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &__title {
+    font-size: 30px;
+    color: dark;
+  }
+
+  &__text {
+    color: $gris-oscuro;
+  }
+}
+.aside-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+.origin-container {
+  background-color: $beige;
+  width: 45%;
+  height: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid $gris-medio;
+
+  &-title {
+    font-size: 30px;
+    margin: auto;
+  }
+  &-text {
+    color: gray;
+    margin: auto;
+  }
+}
+
+.type-container {
+  background-color: $beige;
+  width: 60%;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  text-justify: center;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 3%;
+  border: 1px solid $gris-medio;
+  color: $gris-oscuro;
+  span {
+    background-color: $morado;
+    color: beige;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 2%;
+  }
+}
+
+.date-container {
+  background-color: $beige;
+  width: 45%;
+  border: 1px solid $gris-medio;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  padding-left: 2%;
+
+  &__figure {
+    width: 50px;
+    height: 50%;
+    align-self: center;
+  }
+
+  &__div {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    &-salida {
+      color: $gris-oscuro;
+    }
+    &-date {
+      font-weight: bold;
+      border-top: 1px solid $gris-medio;
+    }
+  }
+}
+
+.aside-date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.aside-passengers {
+  display: flex;
+  justify-content: space-between;
+}
+.passangers-container {
+  width: 45%;
+  background-color: $beige;
+  border-radius: 5px;
+  border: 1px solid $gris-medio;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  padding-left: 10%;
+  cursor: pointer;
+  gap: 10%;
+
+  &__passangers {
+    color: $gris-oscuro;
+  }
+
+  &__number {
+    font-weight: bold;
+  }
+}
+
+.discount-container {
+  width: 45%;
+  background-color: $beige;
+  border-radius: 5px;
+  border: 1px solid $gris-medio;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  padding-left: 2%;
+  cursor: pointer;
+
+  &__title {
+    font-size: 14px;
+    color: $gris-oscuro;
+    margin-bottom: 0;
+  }
+}
+
+.submit-button {
+  width: 100%;
+  background-color: $morado;
+  color: $beige;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  padding: 5px;
+  border-radius: 20px;
+  gap: 10px;
+
+  &__img {
+    filter: invert(89%) sepia(29%) saturate(102%) hue-rotate(360deg)
+      brightness(106%) contrast(94%);
+  }
+}

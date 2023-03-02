@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.modal-container__select {
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  outline: none;
+  border: 2px solid rgb(199, 199, 199);
+  background-color: $gris;
+  width: 100%;
+  color: $gris-oscuro;
+  cursor: pointer;
+}
+
+.buttonSave {
+  background-color: $morado;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: $beige;
+}
+
+.input-radio {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+///////////Counter passangers///////
+.counter-container {
+  margin-left: 15%;
+  display: flex;
+  border: 1px solid $gris-medio;
+  justify-content: center;
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+
+  &__value {
+    font-weight: bold;
+    border-left: 1px solid $gris-medio;
+    padding-left: 10px;
+    border-right: 1px solid $gris-medio;
+    padding-right: 10px;
+  }
+
+  &__button {
+    border: none;
+    background-color: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

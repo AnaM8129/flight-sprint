@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+.section-services {
+  // border: 1px solid red;
+  padding: 20px 100px 20px 100px;
+  width: 98vw;
+
+  &__title {
+    font-size: 30px;
+    color: rgb(24, 24, 24);
+  }
+}
+
+.container-cards {
+  display: flex;
+  gap: 35px;
+}
+
+////////////EACH CARD/////////////////
+.card-services {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+  &__figure {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $morado;
+    padding-top: 8%;
+    &-img {
+      filter: invert(89%) sepia(29%) saturate(102%) hue-rotate(360deg)
+        brightness(106%) contrast(94%);
+    }
+  }
+  &__title {
+    font-weight: bold;
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+  &__description {
+    color: $gris-oscuro;
+  }
+}

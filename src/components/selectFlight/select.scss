@@ -1,0 +1,139 @@
+@import "../variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-select {
+  display: flex;
+}
+////////////////////////ASIDE///////////////////////////////////
+.aside-select {
+  background-color: $gris;
+  width: 35%;
+  height: 100vh;
+  padding: 50px;
+}
+
+.reservation {
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+.search-information {
+  background-color: $beige;
+  border-radius: 10px;
+  padding: 20px;
+}
+.container-one {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px solid $gris-medio;
+}
+.text-titles {
+  color: $gris-oscuro;
+  font-size: 15px;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: bold;
+}
+.text {
+  color: $beige;
+  background-color: $morado;
+  border-radius: 10px;
+  padding: 10px;
+}
+.button-seats {
+  color: $morado;
+  border: 1px solid $morado;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10%;
+
+  &:hover {
+    background-color: $morado;
+    color: $beige;
+  }
+}
+///////////////////////SECTION/////////////////////
+.section-container {
+  width: 70%;
+  padding: 50px;
+}
+.container-first {
+  display: flex;
+  justify-content: space-between;
+}
+.button-home {
+  color: $morado;
+  border: 1px solid $morado;
+  border-radius: 20px;
+  padding: 10px;
+}
+.options-container {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  height: 100px;
+  margin-bottom: 5%;
+}
+.container-hour {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  gap: 10%;
+}
+.center-container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  text-justify: center;
+}
+.hour {
+  font-weight: bold;
+  font-size: 20px;
+}
+.button-briefcase {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid rgb(56, 56, 56);
+  padding: 10px;
+
+  &__img {
+    margin: auto;
+  }
+  &__price {
+    margin: auto;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: $morado;
+    border: none;
+  }
+}
+.submit-button__link {
+  color: beige;
+  text-decoration: none;
+}
+.buttons-container {
+  width: 100%;
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  margin-top: 10%;
+}
