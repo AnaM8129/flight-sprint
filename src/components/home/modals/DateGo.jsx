@@ -14,7 +14,7 @@ const DateGo = ({ value, onChange, name, show, handleClose }) => {
   // };
 
   return (
-    <Modal show={show} onHide={handleClose} size="xl" centered="boolean">
+    <Modal show={show} onHide={handleClose} size="sm" centered="boolean">
       <Modal.Header>
         <Modal.Title>¿Cuál es la fecha de salida?</Modal.Title>
       </Modal.Header>
