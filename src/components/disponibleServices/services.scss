@@ -46,3 +46,20 @@
     color: $gris-oscuro;
   }
 }
+@media (max-width: 470px) {
+  .section-services {
+    padding: 10px;
+  }
+  .section-services__title {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card-services {
+    margin: auto;
+  }
+}

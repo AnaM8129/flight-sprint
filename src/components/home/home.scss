@@ -3,7 +3,6 @@
 .main-container {
   width: 98vw;
   height: 100vh;
-  // border: 1px solid black;
   display: flex;
   // padding: 20px;
   align-items: center;
@@ -28,7 +27,7 @@
   &__form-container {
     position: absolute;
     width: 550px;
-    height: 80%;
+    height: 88%;
     background-color: $gris;
     border-radius: 15px;
     padding: 10px;
@@ -190,5 +189,33 @@
   &__img {
     filter: invert(89%) sepia(29%) saturate(102%) hue-rotate(360deg)
       brightness(106%) contrast(94%);
+  }
+}
+.button__link {
+  justify-self: center;
+  color: $morado;
+  text-decoration: none;
+  margin-left: 40%;
+  font-weight: bold;
+  margin-top: 5%;
+}
+@media (max-width: 470px) {
+  .main-container {
+    width: 100vw;
+  }
+  .main-container__form-container {
+    width: 90%;
+    height: 90%;
+    margin-left: 17px;
+  }
+  .main-container__image-container {
+    position: absolute;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .type-container {
+    width: 100%;
   }
 }

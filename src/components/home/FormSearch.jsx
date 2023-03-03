@@ -10,8 +10,11 @@ import DateCome from "./modals/DateCome";
 import Passangers from "./modals/Passangers";
 import Discount from "./modals/Discount";
 import { saveData } from "../../services/localStorage";
+import { Navigate } from "react-router-dom";
 import SelectFlight from "../selectFlight/SelectFlight";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+
 const FormSearch = () => {
   const [showModal, setShowModal] = useState(false);
   const [showModal2, setShowModal2] = useState(false);
@@ -34,6 +37,8 @@ const FormSearch = () => {
     discount: "",
   });
 
+  const discountCode = ["125A452", "526KUJ", "589JUI", "856LOÑ"];
+
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -54,7 +59,37 @@ const FormSearch = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    saveData(form);
+    if (form.type === "") {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Hay campos vacíos!",
+      });
+    } else if (form.origin === "") {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Hay campos vacíos!",
+      });
+    } else if (form.dateGo === "") {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Hay campos vacíos!",
+      });
+    } else {
+      saveData(form);
+    }
+    // if (
+    //   form.discount === discountCode[0] ||
+    //   form.discount === discountCode[1] ||
+    //   form.discount === discountCode[2] ||
+    //   form.discount === discountCode[4]
+    // ) {
+    //   console.log("coincide ");
+    // } else {
+    //   console.log("no coincide");
+    // }
   };
   const handleModal = () => {
     setShowModal(!showModal);
@@ -224,10 +259,11 @@ const FormSearch = () => {
           }}
         >
           <img className="submit-button__img" src={plane} alt="plane icon" />
-          <Link className="submit-button__link" to="/select">
-            Buscar vuelos
-          </Link>
+          Buscar vuelos
         </button>
+        <Link className="button__link" to="/select">
+          Ver resultados
+        </Link>
       </section>
     </>
   );

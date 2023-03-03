@@ -47,3 +47,37 @@
     }
   }
 }
+
+@media (max-width: 470px) {
+  .aside {
+    padding: 10px;
+  }
+  .aside-title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .asideOne {
+    width: 100%;
+  }
+  .asideOne__container-img {
+    gap: 10px;
+    justify-content: center;
+  }
+  .asideTwo {
+    width: 100%;
+    text-align: left;
+  }
+  .asideTwo__container-img {
+    gap: 10px;
+    float: none;
+    justify-content: center;
+  }
+}
